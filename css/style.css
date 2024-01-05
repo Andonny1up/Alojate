@@ -1,0 +1,66 @@
+:root{
+    /* green theme */
+    --light-color-g-50: #f3faf3;
+    --light-color-g-100: #e4f4e6;
+    --light-color-g-200: #cae8ce;
+    --light-color-g-300: #acd9b2;
+    --light-color-g-400: #70b87a;
+    --light-color-g-500: #4c9b57;
+    --dark-color-g-600: #3a7f44;
+    --dark-color-g-700: #316438;
+    --dark-color-g-800: #2a5130;
+    --dark-color-g-900: #244329;
+    --dark-color-g-950: #102314;
+}
+.navbar{
+    background-color: white !important;
+    border-bottom: 0.1rem solid var(--light-color-g-100);
+}
+.nav-item a{
+    display: flex;
+    align-items: center;
+}
+.nav-item a:hover{
+    color: var(--light-color-g-500);
+}
+.nav-item i{
+    font-size: 1.5rem;
+}
+/* card */
+.container-btn-card{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.container-btn-card .container-prices{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-prices .price{
+    font-size: 1.1rem;
+    color: var(--light-color-g-500);
+}
+.container-prices .text-span{
+    font-size: 0.7rem;
+}
+.btn-my-primary{
+    color: white;
+    background-color: var(--light-color-g-500);
+    padding: 0.5rem;
+}
+.stars-container{
+    font-size: 0.7rem;
+    color: #dec32a;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+@media (max-width: 992px) {
+    .navbar-nav .nav-item a{
+        justify-content: center;
+    }
+}
