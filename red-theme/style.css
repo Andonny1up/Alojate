@@ -154,6 +154,7 @@ header .navbar a:hover{
 }
 .home .image img{
     width: 100%;
+    height: 100%;
     padding: 1rem;
     animation: float 3s linear infinite;
 }
@@ -364,6 +365,7 @@ footer .credit span{
 }
 .b-right{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -388,6 +390,9 @@ footer .credit span{
     .reserve .b-left{
         display: block;
     }
+    .reserve .b-right{
+        width: auto;
+    }
     
 }
 .room-details{
@@ -405,6 +410,9 @@ footer .credit span{
 .room-title-details span{
     padding: 0 1rem;
 }
+.room-location{
+    padding: 1rem 0.5rem;
+}
 .room-title-details .stars i{
     color: gold;
     padding: 1rem 0.5rem;
@@ -416,7 +424,8 @@ footer .credit span{
     margin-top: 2rem; */
     display: grid;
     gap: 1rem;
-    grid-template-areas: 'main main . .' 'main main . .';
+    grid-template-areas: 'main main' '. .''. .';
+    margin: 1rem;
 }
 .gallery figure img{
     width: 100%;
@@ -432,4 +441,73 @@ figure img{
 }
 .gallery-main img{
     height: 40rem;
+}
+.small-details h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.small-details p{
+    font-size: 1.2rem;
+}
+.line{
+    height: 0.1rem;
+    background-color: #ccc;
+    width: 100%;
+    max-width: 80rem;
+    margin: 2rem 0 5rem;
+}
+.details-list{
+    list-style: none;
+    margin: 5rem 0;
+}
+.details-list li{
+    position: relative;
+    margin-left: 5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--gray);
+}
+.details-list li span{
+    display: block;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+.details-list li i{
+    position: absolute;
+    top: 5px;
+    left: -40px;
+}
+.room-desc{
+    font-size: 1.2rem;
+    max-width: 70rem;
+    margin-bottom: 5rem;
+}
+.map{
+    margin: 5rem 0;
+}
+.map h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+.map iframe{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.map b{
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+.map p{
+    font-size: 1.2rem;
+}
+.footer-info{
+    padding-bottom: 10rem;
+}
+@media (min-width: 768px){
+    .gallery{
+        grid-template-areas: 'main main . .' 'main main . .';
+    }
 }
