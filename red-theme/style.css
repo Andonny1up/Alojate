@@ -331,6 +331,7 @@ footer .credit span{
     .home{
         flex-direction: row;
     }
+    
 }
 /* Para estilos mayores a 992px */
 @media (min-width: 992px){
@@ -358,6 +359,7 @@ footer .credit span{
     position: fixed;
     width: 100%;
     bottom: 0;
+    background-color: var(--white);
     box-shadow: 0 -0.5rem 1rem rgba(0,0,0,.1);
 }
 .b-right{
@@ -377,8 +379,57 @@ footer .credit span{
 .container-prices .price{
     font-size: 1.5rem;
 }
-.rooms .box-container .box .stars i{
+.reserve .b-left{
+    display: none;
+}
+
+
+@media (min-width: 520px){
+    .reserve .b-left{
+        display: block;
+    }
+    
+}
+.room-details{
+    padding-top: 10rem;
+}
+.room-title .heading{
+    text-align: start;
+}
+.room-title-details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.room-title-details span{
+    padding: 0 1rem;
+}
+.room-title-details .stars i{
     color: gold;
-    font-size: 1.7rem;
     padding: 1rem 0.5rem;
+}
+.gallery{
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem; */
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 'main main . .' 'main main . .';
+}
+.gallery figure img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.gallery-main{
+    grid-area: main;
+}
+figure img{
+    height: 19.5rem;
+}
+.gallery-main img{
+    height: 40rem;
 }
